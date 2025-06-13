@@ -13,22 +13,22 @@ const HeroSection = () => {
       
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             {t('hero.title')}
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed px-4">
             {t('hero.subtitle')}
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8 py-4 text-lg">
-              <Search className="mr-2 h-5 w-5" />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
+            <Button size="lg" className="w-full sm:w-auto bg-white text-blue-600 hover:bg-blue-50 font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg">
+              <Search className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               {t('hero.findPro')}
             </Button>
             
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-4 text-lg">
-              <Briefcase className="mr-2 h-5 w-5" />
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-blue-600 bg-white hover:bg-blue-600 hover:text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg transition-all duration-200">
+              <Briefcase className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               {t('hero.offerServices')}
             </Button>
           </div>
